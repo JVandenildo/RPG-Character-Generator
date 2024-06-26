@@ -1,2 +1,3 @@
 # RPG Character Generator
- Study on random generation.
+
+Study on random generation.
