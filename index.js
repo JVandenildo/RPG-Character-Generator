@@ -5,8 +5,8 @@ const charNames = [
 	"Descascado",
 	"Rochoso",
 ];
-const charRaces = ["Dwarf", "Elf", "Gnome", "Human", "Orc"];
-const charClasses = ["Archer", "Mage", "Monk", "Rogue", "Warrior"];
+const charRaces = ["Anões", "Elfos", "Gnomos", "Humanos", "Orcs"];
+const charClasses = ["Arqueiros", "Guerreiros", "Ladinos", "Magos", "Monges"];
 
 class Character {
 	/**
