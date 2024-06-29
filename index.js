@@ -1,16 +1,20 @@
 const charNames = [
+	"Bolo-fofo",
+	"Cascavel",
 	"Calabreso",
 	"CNPJoto",
-	"Bolo-fofo",
 	"Descascado",
-	"Rochoso",
+	"Euclides",
 	"Jezebel",
 	"Laravel",
 	"Pegmatito",
+	"Rochoso",
+	"Rogéria",
 ];
 const charRacesM = ["Anão", "Elfo", "Gnomo", "Humano", "Orc"];
 const charRacesF = ["Anã", "Elfa", "Gnoma", "Humana", "Orca"];
-const charClasses = ["Arqueiro", "Guerreiro", "Ladino", "Mago", "Monge"];
+const charClassesM = ["Arqueiro", "Feiticeiro", "Guerreiro", "Ladino", "Monge"];
+const charClassesF = ["Arqueira", "Feiticeira", "Guerreira", "Ladina", "Monge"];
 
 class Character {
 	/**
@@ -38,7 +42,11 @@ class Character {
 	set getRace(string) {}
 
 	get getClass() {
-		return charClasses[handleRandom(charClasses)];
+		if (document.getElementById("ratioMAL").checked) {
+			return charClassesM[handleRandom(charClassesM)];
+		} else {
+			return charClassesF[handleRandom(charClassesF)];
+		}
 	}
 	set getClass(string) {}
 }
